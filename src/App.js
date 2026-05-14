@@ -1,14 +1,19 @@
 import React from "react";
 import PrivacyPolicy from "./PrivacyPolicy";
+import TermsAndConditions from "./TermsAndConditions";
 
 export default function App() {
   if (window.location.pathname === "/privacy-policy") {
     return <PrivacyPolicy />;
   }
 
+  if (window.location.pathname === "/terms-and-conditions") {
+    return <TermsAndConditions />;
+  }
+
   const bookingLink = "https://calendly.com/grahme-smarterstudentcoaching/30min";
   const qrCodeSrc = "/qr-code.png";
-
+  
   const testimonials = [
     {
       quote:
@@ -923,16 +928,29 @@ export default function App() {
   >
     <div>© 2026 Smarter Student Coaching • Durham, NC</div>
 
-    <a
-      href="/privacy-policy"
-      style={{
-        color: "#64748b",
-        textDecoration: "underline",
-        fontWeight: 600
-      }}
-    >
-      Privacy Policy
-    </a>
+<div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+  <a
+    href="/privacy-policy"
+    style={{
+      color: "#64748b",
+      textDecoration: "underline",
+      fontWeight: 600
+    }}
+  >
+    Privacy Policy
+  </a>
+
+  <a
+    href="/terms-and-conditions"
+    style={{
+      color: "#64748b",
+      textDecoration: "underline",
+      fontWeight: 600
+    }}
+  >
+    Terms and Conditions
+  </a>
+</div>
   </div>
 </footer>
       </div>
