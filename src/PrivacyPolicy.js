@@ -14,7 +14,9 @@ export default function PrivacyPolicy() {
     >
       <h1>Privacy Policy</h1>
 
-      <p><strong>Effective Date:</strong> May 14, 2026</p>
+      <p>
+        <strong>Effective Date:</strong> May 14, 2026
+      </p>
 
       <p>
         Smarter Student Coaching respects your privacy and is committed
