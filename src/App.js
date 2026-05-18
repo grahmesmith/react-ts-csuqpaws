@@ -1,19 +1,14 @@
 import React from "react";
 import PrivacyPolicy from "./PrivacyPolicy";
-import TermsAndConditions from "./TermsAndConditions";
 
 export default function App() {
   if (window.location.pathname === "/privacy-policy") {
     return <PrivacyPolicy />;
   }
 
-  if (window.location.pathname === "/terms-and-conditions") {
-    return <TermsAndConditions />;
-  }
-
   const bookingLink = "https://calendly.com/grahme-smarterstudentcoaching/30min";
   const qrCodeSrc = "/qr-code.png";
-  
+
   const testimonials = [
     {
       quote:
@@ -460,12 +455,95 @@ export default function App() {
           }
         
           .nav-inner {
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 0;
           }
         
-          .nav-links {
-            flex-wrap: wrap;
+          .nav .muted {
+            display: none;
+          }
+        
+          .brand {
+            font-size: 1.1rem;
+          }
+        
+          .nav-links a:not(.btn) {
+            display: none;
+          }
+        
+          .nav-links .btn {
+            padding: 10px 14px;
+            font-size: .85rem;
+          }
+        
+          section {
+            padding: 34px 0;
+          }
+        
+          .hero {
+            padding: 44px 0 20px;
+          }
+        
+          .hero-grid {
+            gap: 18px;
+          }
+        
+          h1 {
+            font-size: 2.5rem;
+            line-height: .98;
+          }
+        
+          h2 {
+            font-size: 2rem;
+            line-height: 1.08;
+          }
+        
+          .subhead {
+            font-size: 1.08rem;
+            line-height: 1.45;
+          }
+        
+          .muted {
+            font-size: 1rem;
+            line-height: 1.6;
+          }
+        
+          .hero-card,
+          .card,
+          .problem-card,
+          .system-card,
+          .cta-card {
+            padding: 20px;
+            border-radius: 22px;
+          }
+        
+          .hero-card {
+            min-height: auto;
+          }
+        
+          .hero-actions {
+            flex-direction: column;
+          }
+        
+          .hero-actions .btn {
+            width: 100%;
+          }
+        
+          .quote {
+            padding: 16px;
+            font-size: .95rem;
+            line-height: 1.55;
+          }
+        
+          .problem-card {
+            line-height: 1.45;
+            font-size: .98rem;
+          }
+        
+          .testimonial-text {
+            font-size: .96rem;
+            line-height: 1.6;
           }
         
           .tracker {
@@ -480,6 +558,15 @@ export default function App() {
             grid-template-columns: 160px 130px 90px 240px;
             gap: 10px;
             min-width: 660px;
+          }
+        
+          .cta {
+            padding: 24px;
+            border-radius: 26px;
+          }
+        
+          .footer {
+            padding-bottom: 90px;
           }
         }
       `}</style>
@@ -928,29 +1015,16 @@ export default function App() {
   >
     <div>© 2026 Smarter Student Coaching • Durham, NC</div>
 
-<div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-  <a
-    href="/privacy-policy"
-    style={{
-      color: "#64748b",
-      textDecoration: "underline",
-      fontWeight: 600
-    }}
-  >
-    Privacy Policy
-  </a>
-
-  <a
-    href="/terms-and-conditions"
-    style={{
-      color: "#64748b",
-      textDecoration: "underline",
-      fontWeight: 600
-    }}
-  >
-    Terms and Conditions
-  </a>
-</div>
+    <a
+      href="/privacy-policy"
+      style={{
+        color: "#64748b",
+        textDecoration: "underline",
+        fontWeight: 600
+      }}
+    >
+      Privacy Policy
+    </a>
   </div>
 </footer>
       </div>
