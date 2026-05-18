@@ -644,8 +644,8 @@ export default function App() {
                 </p>
                 <div className="stat">The First 3 Weeks</div>
                 <p className="muted">
-                  We start with three weekly sessions to build momentum, then continue
-                  with monthly coaching and weekly check-ins.
+                  We start with three weekly one on one sessions to build momentum, then continue
+                  with monthly coaching and weekly email check-ins.
                 </p>
               </div>
             </div>
