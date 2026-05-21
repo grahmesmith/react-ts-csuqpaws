@@ -742,26 +742,31 @@ export default function App() {
       </div>
     </div>
 
-    <div className="grid-3" style={{ marginTop: "32px" }}>
-  {sessions.map((session, index) => {
-    const descriptions = [
-      "We start by understanding the student’s strengths, challenges, routines, and what school currently feels like for them.",
-      
-      "Together, we create personalized systems for planning, organization, time management, and tracking schoolwork.",
-      
-      "Students learn practical strategies for getting started, following through, and becoming more independent over time."
-    ];
-
-    return (
-      <div className="card" key={session}>
-        <div className="step-number">{index + 1}</div>
-        <h3>{session}</h3>
-        <p className="muted">{descriptions[index]}</p>
-      </div>
-    );
-  })}
+   <div className="grid-3" style={{ marginTop: "32px" }}>
+  {[
+    {
+      title: "Understand the student and map the current reality",
+      description:
+        "We start by understanding the student’s strengths, challenges, routines, and what school currently feels like for them.",
+    },
+    {
+      title: "Build a system that fits the student",
+      description:
+        "Together, we create personalized systems for planning, organization, time management, and tracking schoolwork.",
+    },
+    {
+      title: "Build habits that actually stick",
+      description:
+        "Students learn practical strategies for getting started, following through, and becoming more independent over time.",
+    },
+  ].map((item, index) => (
+    <div className="card" key={item.title}>
+      <div className="step-number">{index + 1}</div>
+      <h3>{item.title}</h3>
+      <p className="muted">{item.description}</p>
+    </div>
+  ))}
 </div>
-
     return (
       <div className="card" key={session}>
         <div className="step-number">{index + 1}</div>
