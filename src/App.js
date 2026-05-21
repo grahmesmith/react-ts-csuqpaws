@@ -940,26 +940,25 @@ export default function App() {
                   <div className="kicker">About Me</div>
                   <h2>Over 20 years guiding students toward greater independence and academic success</h2>
                   <p className="muted">
-                    For over 20 years, I’ve worked closely with students as a teacher, advisor,
-                    and coach, helping them navigate the academic and personal challenges that
-                    come with growing independence.
-                  </p>
-                  <p className="muted">
-                    Over time, one thing has become very clear: most students are not struggling
-                    because they can’t learn the material. They’re struggling because no one has
-                    shown them how to consistently manage everything that school demands, or
-                    supported them long enough to turn those skills into lasting habits.
-                  </p>
-                  <p className="muted">
-                    Real growth doesn’t happen from a single conversation, a planner, or a quick
-                    organizational fix. It happens through continued support, accountability,
-                    reflection, and follow-through over time.
-                  </p>
-                  <p className="muted">
-                    The biggest changes happen when students build simple, repeatable systems
-                    for planning, getting started, staying on track, and gradually taking ownership
-                    of their work with someone consistently helping guide the process along the way.
-                  </p>
+  For over 20 years, I’ve worked closely with students as a teacher, advisor,
+  and coach, helping them navigate the academic and personal challenges that
+  come with growing independence. I hold a Master’s in Education, multiple
+  teaching certifications, and as a parent of three kids in elementary,
+  middle, and high school, I also understand these challenges from the family side.
+</p>
+
+<p className="muted">
+  Over time, one thing has become very clear: most students are not struggling
+  because they can’t learn the material. They’re struggling because no one has
+  shown them how to consistently manage everything that school demands, or
+  supported them long enough to turn those skills into lasting habits.
+</p>
+
+<p className="muted">
+  Real growth doesn’t happen from a single conversation, a planner, or a quick
+  organizational fix. It happens through continued support, accountability,
+  reflection, and follow-through over time.
+</p>
                 </div>
 
                 <div className="card">
