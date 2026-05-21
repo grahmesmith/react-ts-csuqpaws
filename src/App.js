@@ -765,7 +765,9 @@ export default function App() {
         <div className="card" key={item.title}>
           <div className="step-number">{index + 1}</div>
           <h3>{item.title}</h3>
-          <p className="muted">{item.description}</p>
+          <p className="muted" style={{ minHeight: "96px" }}>
+  {item.description}
+</p>
         </div>
       ))}
     </div>
