@@ -771,7 +771,7 @@ export default function App() {
       <div className="card" key={session}>
         <div className="step-number">{index + 1}</div>
         <h3>{session}</h3>
-        <p className="muted">{descriptions[index]}</p>
+        <p className="muted">{item.description}</p>
       </div>
     );
   })}
