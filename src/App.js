@@ -777,7 +777,6 @@ export default function App() {
     “Working with Grahme completely changed how I handle school. I’m not constantly behind or overwhelmed anymore. I know how to manage my time, keep track of assignments, and actually get started without my parents reminding me about everything.”
       <span className="quote-source">10th grade student</span>
     </p>
-  </div>
 </section>
 
           <section id="investment">
