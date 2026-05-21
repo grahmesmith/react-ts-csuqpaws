@@ -706,10 +706,12 @@ export default function App() {
             </div>
           </section>
 
-          <section id="how">
+         <section id="how">
   <div className="container">
     <div className="kicker">How It Works</div>
+
     <h2>A clear structure that builds independence over time</h2>
+
     <p className="muted">
       Coaching is designed as a semester or year-long partnership.
       We start with weekly sessions to build the system, then shift into
@@ -742,46 +744,37 @@ export default function App() {
       </div>
     </div>
 
-   <div className="grid-3" style={{ marginTop: "32px" }}>
-  {[
-    {
-      title: "Understand the student and map the current reality",
-      description:
-        "We start by understanding the student’s strengths, challenges, routines, and what school currently feels like for them.",
-    },
-    {
-      title: "Build a system that fits the student",
-      description:
-        "Together, we create personalized systems for planning, organization, time management, and tracking schoolwork.",
-    },
-    {
-      title: "Build habits that actually stick",
-      description:
-        "Students learn practical strategies for getting started, following through, and becoming more independent over time.",
-    },
-  ].map((item, index) => (
-    <div className="card" key={item.title}>
-      <div className="step-number">{index + 1}</div>
-      <h3>{item.title}</h3>
-      <p className="muted">{item.description}</p>
+    <div className="grid-3" style={{ marginTop: "32px" }}>
+      {[
+        {
+          title: "Understand the student and map the current reality",
+          description:
+            "We start by understanding the student’s strengths, challenges, routines, and what school currently feels like for them.",
+        },
+        {
+          title: "Build a system that fits the student",
+          description:
+            "Together, we create personalized systems for planning, organization, time management, and tracking schoolwork.",
+        },
+        {
+          title: "Build habits that actually stick",
+          description:
+            "Students learn practical strategies for getting started, following through, and becoming more independent over time.",
+        },
+      ].map((item, index) => (
+        <div className="card" key={item.title}>
+          <div className="step-number">{index + 1}</div>
+          <h3>{item.title}</h3>
+          <p className="muted">{item.description}</p>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-    return (
-      <div className="card" key={session}>
-        <div className="step-number">{index + 1}</div>
-        <h3>{session}</h3>
-        <p className="muted">{item.description}</p>
-      </div>
-    );
-  })}
-</div>
-    
 
     <p className="quote">
-    “Working with Grahme completely changed how I handle school. I’m not constantly behind or overwhelmed anymore. I know how to manage my time, keep track of assignments, and actually get started without my parents reminding me about everything.”
+      “Working with Grahme completely changed how I handle school. I’m not constantly behind or overwhelmed anymore. I know how to manage my time, keep track of assignments, and actually get started without my parents reminding me about everything.”
       <span className="quote-source">10th grade student</span>
     </p>
+  </div>
 </section>
 
           <section id="investment">
