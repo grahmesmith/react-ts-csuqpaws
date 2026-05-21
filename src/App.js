@@ -28,10 +28,10 @@ export default function App() {
   ];
 
   const sessions = [
-    "Understand the student and map the current reality",
-    "Build the planning system",
-    "Work on follow-through and getting started",
-  ];
+  "Understand the student and map the current reality",
+  "Build a system that fits the student",
+  "Build habits that actually stick"
+];
 
   return (
     <>
@@ -743,17 +743,35 @@ export default function App() {
     </div>
 
     <div className="grid-3" style={{ marginTop: "32px" }}>
-      {sessions.map((session, index) => (
-        <div className="card" key={session}>
-          <div className="step-number">{index + 1}</div>
-          <h3>{session}</h3>
-          <p className="muted">
-            Students learn practical routines for planning, starting work,
-            tracking assignments, preparing for tests, and taking more ownership.
-          </p>
-        </div>
-      ))}
-    </div>
+  {sessions.map((session, index) => {
+    const descriptions = [
+      "We start by understanding the student’s strengths, challenges, routines, and what school currently feels like for them.",
+      
+      "Together, we create personalized systems for planning, organization, time management, and tracking schoolwork.",
+      
+      "Students learn practical strategies for getting started, following through, and becoming more independent over time."
+    ];
+
+    return (
+      <div className="card" key={session}>
+        <div className="step-number">{index + 1}</div>
+        <h3>{session}</h3>
+        <p className="muted">{descriptions[index]}</p>
+      </div>
+    );
+  })}
+</div>
+
+    return (
+      <div className="card" key={session}>
+        <div className="step-number">{index + 1}</div>
+        <h3>{session}</h3>
+        <p className="muted">{descriptions[index]}</p>
+      </div>
+    );
+  })}
+</div>
+    
 
     <p className="quote">
     “Working with Grahme completely changed how I handle school. I’m not constantly behind or overwhelmed anymore. I know how to manage my time, keep track of assignments, and actually get started without my parents reminding me about everything.”
